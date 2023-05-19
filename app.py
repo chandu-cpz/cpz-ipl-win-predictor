@@ -72,7 +72,7 @@ else:
         teams=soup1.find("div",{"class":"cb-col cb-col-100 mrgn-btm-5"})
         teams_1=teams.find("a",{"class":"cb-mat-mnu-itm cb-ovr-flo"})
         all_teams=teams_1.text.strip()
-        regex = r'([A-Z]{2,4})\s+vs\s+([A-Z]{2,3})'
+        regex = r'([A-Z]{2,3})\s+vs\s+([A-Z]{2,3})'
         # find the matches using the regular expression
         match = re.search(regex,all_teams)
         if match:
@@ -196,6 +196,7 @@ else:
         'LSG': 'Lucknow Super Giants',
         'MI': 'Mumbai Indians',
         'PBKS': 'Punjab Kings',
+        'PBK': 'Punjab Kings',
         'RR': 'Rajasthan Royals',
         'RCB': 'Royal Challengers Bangalore',
         'SRH': 'Sunrisers Hyderabad'
