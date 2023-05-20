@@ -301,4 +301,5 @@ else:
 
             st.image(bowling_team_image,caption=bowling_team[0])
             st.header("Win Probability:"+str(round(loss*100)) + "%")
-            #st.experimental_rerun()
+    time.sleep(5)
+    st.experimental_rerun()
